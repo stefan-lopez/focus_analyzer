@@ -1,4 +1,3 @@
-import numpy as np
 import cv2
 from common.io_functions import read_config_options, read_xy_data, read_eeg_data, save_combined_av
 from common.transformer import Transformer
@@ -41,8 +40,6 @@ def main():
 
     # Save new video with audio from the original video
     save_combined_av(config['VIDEO_SAVE_PATH'], config['VIDEO_OPEN_PATH'])
-
+    
 if __name__ == '__main__':
     main()
-
-
