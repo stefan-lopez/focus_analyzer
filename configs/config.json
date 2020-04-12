@@ -1,7 +1,6 @@
 {
 "VIDEO_SAVE_PATH" : "transformed_pentatonix_video.mp4",
 "VIDEO_OPEN_PATH" : "resources/pentatonix_video.mp4",
-"VIDEO_AUDIO_PATH" : "resources/pentatonix_audio.mp3",
 "EEG_DATA_PATH" : "resources/eeg_data.csv",
 "EYE_TRACKING_DATA_PATH" : "resources/eye_tracking_data.csv",
 "EYE_TRACKER_SCREEN_DIMS" : [1919, 1079],
