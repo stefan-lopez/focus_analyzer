@@ -1,6 +1,6 @@
 # Focus Analyzer
 
-![](readme_clip.gif)
+!['resources/readme_clip.gif'](resources/readme_clip.gif)
 
 ## Project File Overview
 
