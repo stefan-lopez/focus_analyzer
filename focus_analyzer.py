@@ -21,7 +21,7 @@ def main():
     while VideoHandler.video_capture.isOpened():
         frame_present, frame = VideoHandler.video_capture.read()
         
-        # Check if there is eye tracking data, eeg data, and a frame available. If so, apply transformations to frame and write to disc.
+        # Check for eye tracking data, eeg data, and available frames. If present, apply transformations to frame and write the results.
         if frame_present and  min([len(eeg_data), len(eye_tracking_data)]) > 0:
             Transformer.transform_frame(frame)
             VideoHandler.video_writer.write(Transformer.curr_transformed_frame)
