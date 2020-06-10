@@ -16,7 +16,7 @@ eye_tracking_data = read_xy_data(config['EYE_TRACKING_DATA_PATH'], config['EYE_T
 # Instantiate class to use eeg and eye tracking data to transform videos
 Transformer = Transformer(config, eeg_data, eye_tracking_data, VideoHandler.matrix_indices)
 
-# Iterate through each frame of video, apply transformations to rgb values and re-write to disc
+# Iterate through each frame of video, apply transformations to rgb values and re-write the results
 def main():
     while VideoHandler.video_capture.isOpened():
         frame_present, frame = VideoHandler.video_capture.read()
